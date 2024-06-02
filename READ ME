@@ -1,0 +1,17 @@
+How to use John the ripper
+
+note: if you download a zip file from the internet and it has a password, it might take a long time to crack because of it's password, it might take up to 12 hours to crack.
+
+first type in terminal; cd <where the zip file is> 
+for example; cd Downloads, cd Desktop, you get what i mean.
+
+then type; zip2john <file name.zip>; > hashes
+or; zip2john <file name.zip; > hash.txt
+for example; zip2john easy.zip > hashes or zip2john eazy.zip > hash.txt
+it will create a hashes or hash.txt file,
+
+then type; john -w=/usr/share/wordlists/rockyou.txt hashes or hash.txt
+if it say's fopen: /usr/share/wordlists/rockyou.txt: No such file or directory
+ you probly don't have the rockyou.txt file in wordlists, but you have rockyou.txt.gz file in there.
+to get rockyou.txt, you wanna go to, File System → usr → share  → wordlists → rockyou.txt.gz open it up and extract that to Desktop. After, copy rockyou.txt after extracting, then open wordlists with root and paste rockyou.txt into wordlists. You can find the tutorial on my youtube channel, kernelkali or go to, https://www.youtube.com/watch?v=iSwGQzGyOkY
+now run it and wait.
